@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import {useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
 import './App.css'
+import { Button } from '@/components/ui/button/button'
+// import { Button } from '@/stories/Button'
 
 
 function App() {
@@ -30,6 +32,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Button   variant='primary'as='a' href={'/link'}>hello</Button>
+      <Button  variant='secondary' as='a' href={'https://learn.javascript.ru/fetch?ysclid=lqb7d4s9z5174675650#tasks'}  >hello2</Button>
+      <Button variant='primary'as='button' >hello3</Button>
     </>
   )
 }
